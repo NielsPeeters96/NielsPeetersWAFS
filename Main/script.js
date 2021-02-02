@@ -1,3 +1,4 @@
+// Je maakt variabele aan & connect je met HTML, vervolgens laat je het zien via appendChild //
 const app = document.getElementById('root')
 
 const logo = document.createElement('img')
@@ -9,38 +10,40 @@ container.setAttribute('class', 'container')
 app.appendChild(logo)
 app.appendChild(container)
 
-var request = new XMLHttpRequest()
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
-request.onload = function () {
-  // Begin accessing JSON data here
-  var data = JSON.parse(this.response)
+// Je fetched de data van de API en maakt er vervolgens jsonData van //
+async function fetchData() {
+const dataResponse = await fetch(`https://ghibliapi.herokuapp.com/films`)
+const jsonData = await dataResponse.json()
+console.log(jsonData);
+return jsonData;
+} 
 
-  if (request.status >= 200 && request.status < 400) {
-    data.forEach((movie) => {
-        const card = document.createElement('div')
-        card.setAttribute('class', 'card')
+// Dit zorgt ervoor dat je applicatie start, in de variable data stop je fetchdata en vervolgens render je de data bij renderMovies //
+async function init() {
+const data = await fetchData()
+renderMovies(data)
+}
 
-        const h1 = document.createElement('h1')
-        h1.textContent = movie.title
+function renderMovies(data) {
+  data.forEach((movie) => {
+    const card = document.createElement('div')
+    card.setAttribute('class', 'card')
 
-        const p = document.createElement('p')
-        movie.description = movie.description.substring(0, 300)
-        p.textContent = `${movie.description}...`
+    const h1 = document.createElement('h1')
+    h1.textContent = movie.title
 
-        const int = document.createElement('int')
-        int.textContent = movie.release_date
+    const p = document.createElement('p')
+    movie.description = movie.description.substring(0, 300)
+    p.textContent = `${movie.description}...`
+
+    const int = document.createElement('int')
+    int.textContent = movie.release_date
 
 container.appendChild(card)
 card.appendChild(h1)
 card.appendChild(p)
 card.appendChild(int)
+})
 
-    })
-  } else {
-    const errorMessage = document.createElement('error')
-    errorMessage.textContent = `it's not working!`
-    app.appendChild(errorMessage)
-  }
 }
-
-request.send()
+init()
