@@ -2,7 +2,7 @@
 const app = document.getElementById('root')
 
 const logo = document.createElement('img')
-logo.src = 'logo.png'
+logo.src = 'https://www.herzogcompany.com/wp-content/uploads/2019/12/HCO_CaseBanner_TheMoviesTitle-2048x640.jpg'
 
 const container = document.createElement('div')
 container.setAttribute('class', 'container')
@@ -40,9 +40,10 @@ function renderMovies(data) {
     
     container.appendChild(card)
     card.appendChild(h1)
-    card.appendChild(p)
-    card.appendChild(int)
+    /* card.appendChild(p)
+    card.appendChild(int) */
   })
+
   
 }
 init()
