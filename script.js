@@ -1,5 +1,5 @@
 // Je maakt variabele aan & connect je met HTML, vervolgens laat je het zien via appendChild //
-const app = document.getElementById('root')
+const app = document.getElementById('root');
 
 const logo = document.createElement('img')
 logo.src = 'https://www.herzogcompany.com/wp-content/uploads/2019/12/HCO_CaseBanner_TheMoviesTitle-2048x640.jpg'
@@ -26,24 +26,27 @@ async function init() {
 function renderMovies(data) {
   data.forEach((movie) => {
     const card = document.createElement('div')
-    card.setAttribute('class', 'card')
-    
+    card.setAttribute('class', 'card',)
+    const link =document.createElement('a')
+    link.href=`#${movie.id}`
+
     const h1 = document.createElement('h1')
     h1.textContent = movie.title
-    
+        
     const p = document.createElement('p')
     movie.description = movie.description.substring(0, 300)
     p.textContent = `${movie.description}...`
+    // link.href=`#${movie.description}`
     
     const int = document.createElement('int')
     int.textContent = movie.release_date
+    // link.href=`#${movie.release_date}`
     
-    container.appendChild(card)
+    container.appendChild(link)
     card.appendChild(h1)
-    /* card.appendChild(p)
-    card.appendChild(int) */
-  })
+    link.appendChild(card)
 
+  })
   
 }
 init()
