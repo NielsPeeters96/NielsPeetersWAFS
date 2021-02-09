@@ -20,33 +20,55 @@ async function fetchData() {
 // Dit zorgt ervoor dat je applicatie start, in de variable data stop je fetchdata en vervolgens render je de data bij renderMovies //
 async function init() {
   const data = await fetchData()
+  console.log(data);
   renderMovies(data)
+  
 }
 
 function renderMovies(data) {
   data.forEach((movie) => {
-    const card = document.createElement('div')
-    card.setAttribute('class', 'card',)
-    const link =document.createElement('a')
-    link.href=`#${movie.id}`
+  const card = document.createElement('div')
+  card.setAttribute('class', 'card',)
+  const link =document.createElement('a')
+  link.href=`#${movie.id}`
 
-    const h1 = document.createElement('h1')
-    h1.textContent = movie.title
+  const h1 = document.createElement('h1')
+  h1.textContent = movie.title
         
-    const p = document.createElement('p')
-    movie.description = movie.description.substring(0, 300)
-    p.textContent = `${movie.description}...`
-    // link.href=`#${movie.description}`
+  const p = document.createElement('p')
+  movie.description = movie.description.substring(0, 300)
+  p.textContent = `${movie.description}...`
+  link.href=`#${movie.description}`
     
-    const int = document.createElement('int')
-    int.textContent = movie.release_date
-    // link.href=`#${movie.release_date}`
+  const int = document.createElement('int')
+  int.textContent = movie.release_date
+  // link.href=`#${movie.release_date}`
     
-    container.appendChild(link)
-    card.appendChild(h1)
-    link.appendChild(card)
+  container.appendChild(link)
+  card.appendChild(h1)
+  link.appendChild(card)
 
   })
+
+  // Routie naar ID
+  routie( {
+  ':id': function(id) {
+    console.log(id);
+    detailPage(id);
+  },
+  ':description': function(description){
+    console.log(description);
+  }
+  })
+
+// Map functie
+function detailPage(id)  {
+  Object.values(data).map(key => ({id: key.id, description: key.description}))
+};
   
 }
+
+// Classlist active of display none wanneer je 1 pagina wil laten zien en je de homepagina wil hide
+
+
 init()
