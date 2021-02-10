@@ -54,7 +54,7 @@ function renderMovies(data) {
   routie( {
   ':id': function(id) {
     console.log(id);
-    detailPage(id);
+    // detailPage(id);
   },
   ':description': function(description){
     console.log(description);
@@ -62,9 +62,10 @@ function renderMovies(data) {
   })
 
 // Map functie
-function detailPage(id)  {
-  Object.values(data).map(key => ({id: key.id, description: key.description}))
-};
+// function detailPage(?)  {
+//   let a = data.map(key => ({id: key.id, title: key.title, description: key.description}))
+//   console.log(a)
+// };
   
 }
 
