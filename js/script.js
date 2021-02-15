@@ -16,7 +16,6 @@ async function fetchData() {
 // When starting the application making sure that everything is connected and using await fetchData for no errors //
 async function init() {
   const data = await fetchData()
-  console.log(data);
   renderMovies(data)
 }
 
@@ -34,7 +33,7 @@ function renderMovies(data) {
   const p = document.createElement('p')
   movie.description = movie.description.substring(0, 300)
   p.textContent = `${movie.description}...`
-  link.href=`#${movie.description}`
+  // link.href=`#${movie.description}`
     
   const int = document.createElement('int')
   int.textContent = movie.release_date
@@ -48,19 +47,17 @@ function renderMovies(data) {
   // Routie to ID
   routie( {
   ':id': function(id) {
-    console.log(id);
     // detailPage(id);
   },
   ':description': function(description){
-    console.log(description);
   }
 })
 
 // Map function
-// function detailPage(?)  {
-//   let a = data.map(key => ({id: key.id, title: key.title, description: key.description}))
-//   console.log(a)
-// };
+function detailPage(id)  {
+  let a = data.map(key => ({id: key.id, title: key.title, description: key.description}))
+  console.log(a)
+};
 }
 
 // Classlist active of display none so you only show 1 page
