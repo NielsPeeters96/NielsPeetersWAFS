@@ -1,3 +1,5 @@
+import {renderMovies} from './render.js';
+
 // Fetching data from API and return it as JSON
 async function fetchData() {
     const dataResponse = await fetch(`https://ghibliapi.herokuapp.com/films`)
@@ -11,5 +13,4 @@ async function fetchData() {
     renderMovies(data)
   }
 
-  export {fetchData};
-  export {init};
+  export {fetchData, init};

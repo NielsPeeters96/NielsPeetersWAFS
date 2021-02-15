@@ -5,6 +5,6 @@ import './routie';
     ':id': function(id) {
       // detailPage(id);
     },
-    ':description': function(description){
-    }
+    // ':description': function(description){
+    // }
   })

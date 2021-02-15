@@ -18,6 +18,8 @@ function renderMovies(data) {
     int.textContent = movie.release_date
     // link.href=`#${movie.release_date}`
       
+
+    let container = document.getElementById('container');
     container.appendChild(link)
     card.appendChild(h1)
     link.appendChild(card)
