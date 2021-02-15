@@ -5,14 +5,14 @@
 
 <table>
     <tr>
-        <td align="center"><a href="#nerd_face-usage">🤓 Usage<a></td>
-        <td align="center"><a href="#open_file_folder-folder-structure">🗂 Folder Structure<a></td>
-        <td align="center"><a href="#package-api-endpoints-structure">📦 API Structure<a></td>
-        <td align="center"><a href="#memo-todo-list">📝 Todo list<a></td>
+        <td align="center"><a href="#nerd_face-usage">Usage<a></td>
+        <td align="center"><a href="#open_file_folder-folder-structure">Folder Structure<a></td>
+        <td align="center"><a href="#package-api-endpoints-structure">API Structure<a></td>
+        <td align="center"><a href="#memo-todo-list">Todo list<a></td>
     </tr>
 </table>
 
-## :nerd_face: Usage
+## Usage
 
 All movies from Ghibli API. Click on a movie title and it will show you the description, release date and producer.
 
@@ -20,7 +20,7 @@ All movies from Ghibli API. Click on a movie title and it will show you the desc
 
 ![Frontend ](https://github.com/NielsPeeters/web-app-from-scratch/img/screenshot.png)
 
-## :open_file_folder: Folder Structure
+## Folder Structure
 
 This projects uses **modules**. This helps your code to be more readable. Never worked with modules before so it will be a difficult task.
 
@@ -32,7 +32,7 @@ This projects uses **modules**. This helps your code to be more readable. Never 
 
 ![Interaction Diagram]() **still in development**
 
-## :package: API Endpoints Structure
+## API Endpoints Structure
 
 What's inside the API (structure/objects).
 
@@ -77,7 +77,7 @@ _release_date_: **1986**
     ]
 }
 ```
-## :memo: Todo list
+## Todo list
 
 -   [x] **Connect with API**.
 
