@@ -16,9 +16,6 @@
 
 All movies from Ghibli API. Click on a movie title and it will show you the description, release date and producer.
 
-## Livelink
-https://nielspeeters96.github.io/NielsPeetersWAFS/
-
 ### Screenshot
 
 ![Frontend ](https://github.com/NielsPeeters96/NielsPeeters_Web_App_From_Scratch/blob/main/img/Screenshot.png)
