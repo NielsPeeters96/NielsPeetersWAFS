@@ -92,7 +92,7 @@ _release_date_: **1986**
 
 -   [x] **Add ahref links to the homepage**. 
 
--   [ ] **Add modules** 
+-   [x] **Add modules** 
 
 -   [ ] **When you click on a movie you'll get directed to the detailpage**
 
