@@ -18,7 +18,7 @@ All movies from Ghibli API. Click on a movie title and it will show you the desc
 
 ### Screenshot
 
-![Frontend ](https://github.com/NielsPeeters/web-app-from-scratch/img/screenshot.png)
+![Frontend ](https://github.com/NielsPeeters96/NielsPeeters_Web_App_From_Scratch/blob/main/Screenshot.png)
 
 ## Folder Structure
 
