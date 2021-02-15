@@ -16,6 +16,7 @@ async function fetchData() {
 // When starting the application making sure that everything is connected and using await fetchData for no errors //
 async function init() {
   const data = await fetchData()
+  console.log(data);
   renderMovies(data)
 }
 
