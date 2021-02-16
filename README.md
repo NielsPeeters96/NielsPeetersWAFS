@@ -29,7 +29,7 @@ This projects uses **modules**. This helps your code to be more readable. Never 
 
 ### Actor Diagram
 
-![Actor Diagram]() **still in development**
+![Actor Diagram](https://github.com/NielsPeeters96/NielsPeetersWAFS/blob/main/img/Actor_diagram.png) 
 
 ### Interaction Diagram
 
@@ -92,7 +92,7 @@ _release_date_: **1986**
 
 -   [x] **Add ahref links to the homepage**. 
 
--   [ ] **Add modules** 
+-   [x] **Add modules** 
 
 -   [ ] **When you click on a movie you'll get directed to the detailpage**
 
