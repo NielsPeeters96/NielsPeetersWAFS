@@ -17,13 +17,16 @@ function renderMovies(data) {
     const int = document.createElement('int')
     int.textContent = movie.release_date
     // link.href=`#${movie.release_date}`
-      
-
+    
     let container = document.getElementById('container');
     container.appendChild(link)
     card.appendChild(h1)
     link.appendChild(card)
+
+    let a = data.map(key => ({id: key.id, title: key.title, description: key.description}));
+    console.log(a);
     })
 }
+
 
 export {renderMovies};

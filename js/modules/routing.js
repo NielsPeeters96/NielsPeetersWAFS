@@ -2,9 +2,10 @@ import './routie';
 
 // Routie to ID
   routie( {
-    ':id': function(id) {
-      // detailPage(id);
+    ':id': function() {
+      let detailpage = document.getElementById('detailpage');
+      detailpage.appendChild(p); 
+      detailpage.appendChild(int);
     },
-    // ':description': function(description){
-    // }
+    
   })
