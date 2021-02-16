@@ -29,7 +29,7 @@ This projects uses **modules**. This helps your code to be more readable. Never 
 
 ### Actor Diagram
 
-![Actor Diagram](https://github.com/NielsPeeters96/NielsPeetersWAFS/blob/main/img/actor_diagram.png) 
+![Actor Diagram](https://github.com/NielsPeeters96/NielsPeetersWAFS/blob/main/img/Actor_diagram.png) 
 
 ### Interaction Diagram
 
