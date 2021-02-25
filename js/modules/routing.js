@@ -22,6 +22,7 @@ function sectionToggler(page) {
   activeSection.setAttribute('aria-hidden', 'false');
   activeSection.hidden = false;
 }
+}
 
 routeHandler();
-export { routeHandler };
+export {routeHandler};
