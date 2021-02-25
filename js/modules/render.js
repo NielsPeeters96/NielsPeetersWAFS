@@ -24,7 +24,6 @@ function renderMovies(data) {
     link.appendChild(card)
 
     let a = data.map(key => ({id: key.id, title: key.title, description: key.description}));
-    console.log(a);
     })
 }
 

@@ -1,28 +1,20 @@
-import './routie';
-
 // Routie to ID
-function routeHandler() {
+function routeHandler(data) {
+  const overview = document.getElementById('container')
+  const detailpage = document.getElementById('detailpage')
   routie({
-    'id': function () {
-      sectionToggler('detailpage');
+    ':id': function (id) {
+      let filtermovie = data.filter(movie => movie.id == id)[0]
+      const description = document.getElementById('description')
+      description.innerHTML = filtermovie.description
+      overview.classList.toggle('hidden')
+      detailpage.classList.toggle('hidden')
     },
+    '': function (){
+      overview.classList.remove('hidden')
+      detailpage.classList.add('hidden')
+    } // detailpage hide overview page showen
   })
-
-function sectionToggler(page) {
-  const allSections = document.querySelectorAll('section');
-  const activeSection = document.querySelector(`#${page}`);
-
-  allSections.forEach((section) => {
-    section.classList.remove('active');
-    section.setAttribute("aria-hidden", "true");
-    section.hidden = true;
-  });
-
-  activeSection.classList.add('active');
-  activeSection.setAttribute('aria-hidden', 'false');
-  activeSection.hidden = false;
-}
 }
 
-routeHandler();
 export {routeHandler};
