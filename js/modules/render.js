@@ -6,7 +6,7 @@ function renderMovies(data) {
     const link =document.createElement('a')
     link.href=`#${movie.id}`
   
-    const h1 = document.createElement('h1')
+    const h1 = document.createElement('button')
     h1.textContent = movie.title
           
     const p = document.createElement('p')
