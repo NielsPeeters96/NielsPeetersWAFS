@@ -6,6 +6,4 @@ import './routie';
       let detailpage = document.getElementById('detailpage');
       detailpage.appendChild(p); 
       detailpage.appendChild(int);
-    },
-    
   })
