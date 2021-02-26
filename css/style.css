@@ -16,7 +16,7 @@
     margin: 0 auto;
   }
   
-  button {
+  h1 {
     text-align: center;
     padding: 1.5rem 2.5rem;
     background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
@@ -38,16 +38,9 @@
     margin: 0;
   }
   
-  /* #container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  } */
-  
   .card {
     margin: 1rem 1rem;
-    background: white;
-    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
     border-radius: 12px;
     overflow: hidden;
     transition: all .2s linear;
@@ -70,15 +63,15 @@
     }
   }
   
-  a:nth-child(2n) button {
+  a:nth-child(2n) h1 {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   }
   
-  a:nth-child(4n) button {
+  a:nth-child(4n) h1 {
     background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
   }
   
-  a:nth-child(5n) button {
+  a:nth-child(5n) h1 {
     background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
   }
 
@@ -106,4 +99,17 @@
 
   .hidden {
     display: none;
+  }
+
+  h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  p {
+    font-family: nunito;
+    font-size: 1.5em;
+    text-align: center;
   }
