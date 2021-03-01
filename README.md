@@ -33,7 +33,7 @@ This projects uses **modules**. This helps your code to be more readable. Never 
 
 ### Interaction Diagram
 
-![Interaction Diagram]() **still in development**
+![Interaction Diagram](https://github.com/NielsPeeters96/NielsPeetersWAFS/blob/main/img/interaction_diagram.png)
 
 ## API Endpoints Structure
 
