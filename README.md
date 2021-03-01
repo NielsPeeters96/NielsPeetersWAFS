@@ -94,8 +94,8 @@ _release_date_: **1986**
 
 -   [x] **Add modules** 
 
--   [ ] **When you click on a movie you'll get directed to the detailpage**
+-   [x] **When you click on a movie you'll get directed to the detailpage**
 
--   [ ] **Add map function**
+-   [x] **Add filter function**
 
--   [ ] **Show only the description on the detailpage**
+-   [x] **Show only the description, release date and director on the detailpage**
