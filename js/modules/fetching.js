@@ -5,4 +5,10 @@ async function fetchData() {
   return jsonData;
 } 
 
-export {fetchData};
+async function getData() {
+  const getPeople = await fetch(`https://ghibliapi.herokuapp.com/people`)
+  const people = await getPeople.json()
+  return people;
+} 
+
+export {fetchData, getData};
