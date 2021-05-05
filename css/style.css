@@ -1,115 +1,140 @@
 * {
-    box-sizing: border-box
-  }
-  
-  html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
-    color: #666;
-    background: #F6F6F6;
-  }
-  
-  #root {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    text-align: center;
-    padding: 1.5rem 2.5rem;
-    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
-    margin: 0 0 0rem 0;
-    font-size: 1.5rem;
-    color: white;
-    overflow: hidden;
-    margin: 0%;
-  }
-  
-  img {
-    display: block;
-    margin: 3rem auto;
-    max-width: 50%;
-  }
-  
-  p {
-    padding: 0 2.5rem 2.5rem;
-    margin: 0;
-  }
-  
+  box-sizing: border-box
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  color:#e5b391;
+  font-family: "Poppins";
+  background: #FFA17F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00223E, #FFA17F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00223E, #FFA17F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.9;
+  font-weight: 400;
+  font-family: 'poppins';
+}
+
+img {
+  display: block;
+  margin: 3rem auto;
+  max-width: 50%;
+}
+
+h3 {
+  padding: 0 2.5rem 2.5rem;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.card {
+  margin: 1rem 1rem;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+
+@media screen and (min-width: 600px) {
   .card {
-    margin: 1rem 1rem;
-     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all .2s linear;
+    flex: 1 1 calc(50% - 2rem);
   }
-  
-  .card:hover {
-    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-    transform: translate3D(0, -2px, 0);
-  }
-  
-  @media screen and (min-width: 600px) {
-    .card {
-      flex: 1 1 calc(50% - 2rem);
-    }
-  }
-  
-  @media screen and (min-width: 900px) {
-    .card {
-      flex: 1 1 calc(33% - 2rem);
-    }
-  }
-  
-  a:nth-child(2n) h1 {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  }
-  
-  a:nth-child(4n) h1 {
-    background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
-  }
-  
-  a:nth-child(5n) h1 {
-    background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
-  }
+}
 
-  a {
-    text-decoration: none;
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
   }
+}
 
-#feedback {
-    background: white;
-    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-    border-radius: 12px;
-    transition: all .2s linear;
-    text-align: center;
-    padding: 1.5rem 2.5rem;
-    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
-    font-size: 1.5rem;
-    color: white;
-    margin: .1rem 3rem;
-  }
+body .home a {
+  max-width: 320px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: white;
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+#container {
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#buttons a {
+  display: inline-block;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   
-  #feedback:hover {
-    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-    transform: translate3D(0, -2px, 0);
-  }
+  border: 1px solid #cccccc;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  
+  margin: 10px 10px 10px 10px;
+  
+  font-weight: 600;
+  font-size: 2em;
+  color: #ffffff;
+  opacity: .8;
+  
+  text-decoration: none;
+  text-align: center;
+}
 
-  .hidden {
-    display: none;
-  }
+#buttons a:hover {
+  background: #db722c;
+  opacity: .5;
+}
 
-  h2 {
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 3.5em;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.hidden {
+  display: none;
+}
 
-  p {
-    font-family: nunito;
-    font-size: 1.5em;
-    text-align: center;
-  }
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
+
+#detailpage {
+  margin-left: 100px;
+  margin-right: 100px;
+}

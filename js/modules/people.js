@@ -1,23 +1,8 @@
-function renderPeople(dataPeople) {
-    dataPeople.forEach((person) => {
-        const card = document.createElement('div')
-        card.setAttribute('class', 'card',)
-        const link =document.createElement('a')
-        link.href=`#${person.id}`
-        
-        const h1 = document.createElement('h1')
-        h1.textContent = person.name
+import {getData} from './fetching.js';
+import {renderPeople} from './renderPeople';
 
-        const int = document.createElement('int')
-        int.textContent = person.age
-        
-        let container = document.getElementById('container');
-        container.appendChild(link)
-        card.appendChild(h1)
-        link.appendChild(card)
-        
-        // let a = data.map(key => ({id: key.id, title: key.title, description: key.description}));
-    })
+async function initPeople() {
+    const dataPeople = await getData()
+    renderPeople(dataPeople)
 }
-
-export {renderPeople};
+initPeople()

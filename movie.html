@@ -8,22 +8,25 @@
     <title> Niels API Design </title>
     <link href="css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Poppins' />
-    <script src="js/modules/showPeople.js" type="module"></script>
     <script src="js/modules/movies.js" type="module"></script>
     <script src="routie.js"></script>
 </head>
 
 <body>
-    <img src='https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png'>
+        <img src='https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png'>
 
-    <h1>Welcome to Ghibli Movies and People</h1>
+        <div class="home">
+            <a href='/index.html'>Return to Homepage</a>
+        </div>
 
-    <h3>Press a button</h3>
+        <section id="container"></section>
 
-    <div id="buttons">
-    <a href="/movie.html">Movies</a>
-    <a href="/people.html">People</a>
-</div>
+        <section id="detailpage" class="hidden">
+            <h2>Detailpage</h2>
+            <p id="description"></p>
+            <p id="director"></p>
+            <p id="release_date"></p>
+        </section>
 
 </body>
 </html>
