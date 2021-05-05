@@ -99,3 +99,9 @@ _release_date_: **1986**
 -   [x] **Add filter function**
 
 -   [x] **Show only the description, release date and director on the detailpage**
+
+
+## Expansion (resit)
+- Feedback naar de gebruiker
+- Duidelijke homepagina
+- Extra Endpoint toegevoegd
