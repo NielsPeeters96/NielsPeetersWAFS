@@ -2,7 +2,6 @@
 function routeHandler(data) {
   const overview = document.getElementById('container')
   const detailpage = document.getElementById('detailpage')
-  const feedback = document.getElementById('feedback')
   
   routie({
     ':id': function (id) {
@@ -19,12 +18,10 @@ function routeHandler(data) {
       
       overview.classList.toggle('hidden')
       detailpage.classList.toggle('hidden')
-      feedback.classList.toggle('hidden')
     },
     '': function (){
       overview.classList.remove('hidden')
       detailpage.classList.add('hidden')
-      feedback.classList.remove('hidden')
     }
   })
 }

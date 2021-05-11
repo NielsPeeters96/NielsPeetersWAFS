@@ -1,5 +1,5 @@
 import {fetchData} from './fetching.js';
-import {routeHandler} from './routing.js';
+import {routeHandler} from './routingMovies.js';
 import {renderMovies} from './renderMovies.js';
 
 async function init() {

@@ -21,7 +21,6 @@ function renderMovies(data) {
         card.appendChild(h1)
         link.appendChild(card)
         
-        // let a = data.map(key => ({id: key.id, title: key.title, description: key.description}));
     })
 }
 
