@@ -21,7 +21,7 @@ https://nielspeeters96.github.io/NielsPeetersWAFS/
 
 ### Screenshot
 
-![Frontend ](https://github.com/NielsPeeters96/NielsPeeters_Web_App_From_Scratch/blob/main/img/Screenshot.png)
+![image](https://user-images.githubusercontent.com/78353674/117794962-040baf80-b24e-11eb-9a7e-26ba71c5c98b.png)
 
 ## Folder Structure
 
@@ -80,6 +80,25 @@ _release_date_: **1986**
     ]
 }
 ```
+
+```json
+{
+    "People": [
+        {
+            "id": "ba924631-068e-4436-b6de-f3283fa848f0",
+            "name": "Ashitaka",
+            "gender": "male",
+            "age": "late teens",
+            "eye_color": "brown",
+            "hair_color": "brown",
+            "films": [],
+            "species": "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2",
+            "url": "https://ghibliapi.herokuapp.com/people/ba924631-068e-4436-b6de-f3283fa848f0"
+        },
+     ]
+}
+```
+
 ## Todo list
 
 -   [x] **Connect with API**.
@@ -99,3 +118,13 @@ _release_date_: **1986**
 -   [x] **Add filter function**
 
 -   [x] **Show only the description, release date and director on the detailpage**
+
+
+## Expansion (resit)
+- Feedback to the user
+
+I've added a new homepage and placed a button on each page that will take you back to the homepage. When you arrive at the landing page you immediately see that you can look up information about films and the employees. In addition, I also used other colors and fonts as before to create a clearer image.
+
+- Added extra end point
+
+Besides the homepage I also added a second endpoint 'People'. Here you can look up information about certain employees and what they look like. I added this to show that it is not a simple application with only 1 endpoint.
