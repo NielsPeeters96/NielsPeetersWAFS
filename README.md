@@ -122,7 +122,9 @@ _release_date_: **1986**
 
 ## Expansion (resit)
 - Feedback to the user
+
 I've added a new homepage and placed a button on each page that will take you back to the homepage. When you arrive at the landing page you immediately see that you can look up information about films and the employees. In addition, I also used other colors and fonts as before to create a clearer image.
 
 - Added extra end point
+
 Besides the homepage I also added a second endpoint 'People'. Here you can look up information about certain employees and what they look like. I added this to show that it is not a simple application with only 1 endpoint.
