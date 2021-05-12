@@ -128,3 +128,5 @@ I've added a new homepage and placed a button on each page that will take you ba
 - Added extra end point
 
 Besides the homepage I also added a second endpoint 'People'. Here you can look up information about certain employees and what they look like. I added this to show that it is not a simple application with only 1 endpoint.
+
+- Changed Lay-out
